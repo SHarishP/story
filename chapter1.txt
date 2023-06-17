@@ -1,1 +1,18 @@
-Belajar Version Control menggunakan GIT
+Belajar Version Control menggunakan GIT :
+
+1. Untuk meng-initiate git kedalam directory supaya fungsi version control oleh git dapat kita gunakan, 
+    harus menambahkan perintah 'git init' di dalam terminal (dalam windows 10 dapat menggunakan gitbash)
+    kemudian akan muncul folder yang terhidden pada working directory bernama .git. 
+
+    Note : Jangan lupa untuk mengarahkan working directory pada git bash.
+
+2. Setelah menambahkan file baru pada working directory dan melakukan save perubahan pada file yang baru, kita dapat
+    menggunakan perintah sebagai berikut :
+    a. git status : untuk mengecek status file apakah sudah masuk ke container pada git sehingga bisa dilakukan commit atau belum; 
+    b. git add : untuk menambahkan file baru kepada container git sehingga bisa dilakukan version control
+        git add . : (perhatikan 'titik') untuk menambahkan semua file pada working directory ke container git.
+        git add <filename1>.extention <filename2>.extention : untuk menambahkan 1 file atau lebih pada container git
+    c. git commit -m "your massage here" : untuk membuat commit di git sehingga dapat menyimpan file kita serta dapat 
+        memberikan pesan terkait perubahan terakhir
+    d. git log : untuk mengecek log/perubahan perubahan yang terjadi pada version control.
+    e. git rm --cached <filename1>.extention : untuk menghapus file sehingga tidak di tracking oleh git.
